@@ -4,7 +4,7 @@
 namespace App\Common\Infrastructure\Elasticsearch;
 
 
-class ESManagementOperations extends ESClientimplements implements ESManagementOperationsInterface
+class ESManagementOperations extends ESClient implements ESManagementOperationsInterface
 {
     public function create($params): array
     {
@@ -13,6 +13,6 @@ class ESManagementOperations extends ESClientimplements implements ESManagementO
 
     public function delete($params): array
     {
-        return $this->client->indices()->delete($params);;
+        return $this->client->indices()->delete($params);
     }
 }
