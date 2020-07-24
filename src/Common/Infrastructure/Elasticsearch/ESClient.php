@@ -12,11 +12,7 @@ abstract class ESClient
     public function __construct(array $hosts = ['http://localhost:9200'])
     {
         $this->client = ClientBuilder::create()
-        ->setHosts($hosts)
-        ->build();
+            ->setHosts($hosts)
+            ->build();
     }
-
-
-
-
 }
